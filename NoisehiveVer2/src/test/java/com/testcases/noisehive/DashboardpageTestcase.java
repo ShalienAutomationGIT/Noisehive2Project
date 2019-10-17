@@ -1,14 +1,17 @@
 package com.testcases.noisehive;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import com.base.noisehive.Base;
 import com.pages.noisehive.Dashboardpage;
 
-public class DashboardpageTestcase extends Base {
+public class DashboardpageTestcase extends Base {	
 	
 	
 	@BeforeMethod
@@ -18,15 +21,26 @@ public class DashboardpageTestcase extends Base {
 		initBrowser();
 	}
 	
+	Dashboardpage dp = PageFactory.initElements(driver, Dashboardpage.class);
 	
-	@Test
+	@Test(priority=1)
 	public void testdashboardpage()
-	{
+	{	
 		
-		Dashboardpage dp = PageFactory.initElements(driver, Dashboardpage.class);
 		dp.verifyDashboardTitle();
 		
 	}
+	
+	
+	
+	  @Test(priority=2) 
+	  public void verifyDashboardMusicHeader()
+	  {
+		  
+	  dp.verifyDashboardHeader();
+	  
+	  }
+	 
 	
 	
 	@AfterMethod
