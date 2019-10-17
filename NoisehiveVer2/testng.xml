@@ -5,5 +5,5 @@
     <classes>
       <class name="com.testcases.noisehive.DashboardpageTestcase"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> 
+</suite> 

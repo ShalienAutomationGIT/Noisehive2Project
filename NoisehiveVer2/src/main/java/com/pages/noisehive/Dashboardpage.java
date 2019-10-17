@@ -1,22 +1,26 @@
 package com.pages.noisehive;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 import com.base.noisehive.Base;
 
-import junit.framework.Assert;
+
 
 public class Dashboardpage extends Base {
 	
-	public Dashboardpage()
+	
+	public Dashboardpage(WebDriver driver)
 	{
 		this.driver = driver;
 	}
 	
 	//Define locators
 	
-	@FindBy(xpath="")
+	@FindBy(xpath="/html/body/section[2]/div[2]/div/div[1]/p/text()")
 	WebElement dashboardMusicHeader;
 	
 	
@@ -26,5 +30,17 @@ public class Dashboardpage extends Base {
 		Assert.assertTrue(title.contains("Noisehive"));
 		System.out.println("1. Title on Dashboard Web Page: " +title);
 	}
+	
+	
+	public void verifyDashboardHeader()
+	{ 
+		
+		WebElement headertext1 = driver.findElement(By.xpath("//*[@id=\"header5-2\"]/div[2]/div/div[1]/p"));
+		String actText = headertext1.getText();
+		Assert.assertEquals(actText, "Get #YourMusicOnline");
+		System.out.println("2. Header on DashboardPage : " +actText);
+		
+	}
+	
 
 }

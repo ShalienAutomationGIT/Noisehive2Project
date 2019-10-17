@@ -25,6 +25,7 @@ public class Base {
 	public static WebDriver driver;
 	public static Properties CONFIG ;
 	public static int IMPLICIT_WAIT = 30;
+	public static int PAGE_TIMEOUT = 20;
 	
 	
 	// Setting properties file method
@@ -70,6 +71,7 @@ public class Base {
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().pageLoadTimeout(PAGE_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
 		driver.get(CONFIG.getProperty("URL"));
