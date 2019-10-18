@@ -1,37 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-10-18T06:43:47Z" name="Suite" finished-at="2019-10-18T06:44:18Z" duration-ms="31514">
+  <suite name="Default suite" duration-ms="48178" started-at="2019-10-18T08:19:27Z" finished-at="2019-10-18T08:20:16Z">
     <groups>
     </groups>
-    <test started-at="2019-10-18T06:43:47Z" name="Test" finished-at="2019-10-18T06:44:18Z" duration-ms="31514">
+    <test name="Default test" duration-ms="48178" started-at="2019-10-18T08:19:27Z" finished-at="2019-10-18T08:20:16Z">
       <class name="com.testcases.noisehive.DashboardpageTestcase">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.noisehive.DashboardpageTestcase@4f2b503c]" started-at="2019-10-18T06:43:47Z" name="setup" finished-at="2019-10-18T06:44:01Z" duration-ms="13665" status="PASS">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testcases.noisehive.DashboardpageTestcase@2833cc44]" name="setup" is-config="true" duration-ms="13652" started-at="2019-10-18T08:19:27Z" finished-at="2019-10-18T08:19:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testdashboardpage()[pri:1, instance:com.testcases.noisehive.DashboardpageTestcase@4f2b503c]" started-at="2019-10-18T06:44:01Z" name="testdashboardpage" finished-at="2019-10-18T06:44:01Z" duration-ms="19" status="PASS">
+        <test-method status="PASS" signature="testdashboardpage()[pri:1, instance:com.testcases.noisehive.DashboardpageTestcase@2833cc44]" name="testdashboardpage" duration-ms="30" started-at="2019-10-18T08:19:41Z" finished-at="2019-10-18T08:19:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testdashboardpage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.noisehive.DashboardpageTestcase@4f2b503c]" started-at="2019-10-18T06:44:01Z" name="tearDown" finished-at="2019-10-18T06:44:02Z" duration-ms="996" status="PASS">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcases.noisehive.DashboardpageTestcase@2833cc44]" name="tearDown" is-config="true" duration-ms="784" started-at="2019-10-18T08:19:41Z" finished-at="2019-10-18T08:19:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.noisehive.DashboardpageTestcase@4f2b503c]" started-at="2019-10-18T06:44:02Z" name="setup" finished-at="2019-10-18T06:44:14Z" duration-ms="12047" status="PASS">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testcases.noisehive.DashboardpageTestcase@2833cc44]" name="setup" is-config="true" duration-ms="12226" started-at="2019-10-18T08:19:42Z" finished-at="2019-10-18T08:19:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyDashboardMusicHeader()[pri:2, instance:com.testcases.noisehive.DashboardpageTestcase@4f2b503c]" started-at="2019-10-18T06:44:14Z" name="verifyDashboardMusicHeader" finished-at="2019-10-18T06:44:14Z" duration-ms="54" status="PASS">
+        <test-method status="PASS" signature="verifyDashboardMusicHeader()[pri:2, instance:com.testcases.noisehive.DashboardpageTestcase@2833cc44]" name="verifyDashboardMusicHeader" duration-ms="42" started-at="2019-10-18T08:19:54Z" finished-at="2019-10-18T08:19:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDashboardMusicHeader -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.noisehive.DashboardpageTestcase@4f2b503c]" started-at="2019-10-18T06:44:14Z" name="tearDown" finished-at="2019-10-18T06:44:18Z" duration-ms="4695" status="PASS">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcases.noisehive.DashboardpageTestcase@2833cc44]" name="tearDown" is-config="true" duration-ms="785" started-at="2019-10-18T08:19:54Z" finished-at="2019-10-18T08:19:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testcases.noisehive.DashboardpageTestcase@2833cc44]" name="setup" is-config="true" duration-ms="11897" started-at="2019-10-18T08:19:55Z" finished-at="2019-10-18T08:20:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkScrollDown()[pri:3, instance:com.testcases.noisehive.DashboardpageTestcase@2833cc44]" name="checkScrollDown" duration-ms="4014" started-at="2019-10-18T08:20:07Z" finished-at="2019-10-18T08:20:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkScrollDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcases.noisehive.DashboardpageTestcase@2833cc44]" name="tearDown" is-config="true" duration-ms="4709" started-at="2019-10-18T08:20:11Z" finished-at="2019-10-18T08:20:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.testcases.noisehive.DashboardpageTestcase -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
