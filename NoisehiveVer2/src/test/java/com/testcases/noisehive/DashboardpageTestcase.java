@@ -25,13 +25,10 @@ public class DashboardpageTestcase extends Base {
 	
 	@Test(priority=1)
 	public void testdashboardpage()
-	{	
-		
-		dp.verifyDashboardTitle();
-		
+	{			
+		dp.verifyDashboardTitle();		
 
 	}	
-
 	
 	  @Test(priority=2) 
 	  public void verifyDashboardMusicHeader()
@@ -39,13 +36,7 @@ public class DashboardpageTestcase extends Base {
 		  
 	  dp.verifyDashboardHeader();
 	  
-	  }
-	  
-	  @Test(priority=3)
-	  public void clickMoreInfoBtn() throws InterruptedException
-	  {
-		  dp.clickMoreInformation();
-	  }
+	  }	   
 	 
 	  @Test(priority=3)
 	  public void checkScrollDown() throws InterruptedException
@@ -53,6 +44,12 @@ public class DashboardpageTestcase extends Base {
 		  Thread.sleep(3000);
 		  dp.scrollDownPage();
 		  Thread.sleep(1000);
+	  }
+	  
+	  @Test(priority=4)
+	  public void clickMoreInfoBtn() throws InterruptedException
+	  {
+		  dp.clickMoreInformation();
 	  }
 	
 	
