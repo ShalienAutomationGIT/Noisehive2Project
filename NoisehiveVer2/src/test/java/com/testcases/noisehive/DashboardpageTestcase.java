@@ -41,7 +41,7 @@ public class DashboardpageTestcase extends Base {
 	  
 	  }
 	  
-	  @Test(priority=3)
+	  @Test(priority=4)
 	  public void clickMoreInfoBtn() throws InterruptedException
 	  {
 		  dp.clickMoreInformation();
