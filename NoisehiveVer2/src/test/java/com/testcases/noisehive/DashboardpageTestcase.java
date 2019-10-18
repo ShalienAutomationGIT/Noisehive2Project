@@ -29,12 +29,9 @@ public class DashboardpageTestcase extends Base {
 		
 		dp.verifyDashboardTitle();
 		
-<<<<<<< HEAD
-	}
-	
-=======
+
 	}	
->>>>>>> QA2
+
 	
 	  @Test(priority=2) 
 	  public void verifyDashboardMusicHeader()

@@ -48,18 +48,19 @@ public class Dashboardpage extends Base {
 		
 	}
 	
-<<<<<<< HEAD
+
 	public void scrollDownPage()
 	{
 		JavascriptExecutor js = ((JavascriptExecutor)driver);
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		System.out.println("3. Scroll down successfully");
-=======
+	}
+
 	public void clickMoreInformation() throws InterruptedException
 	{
 		moreinfobtn.click();
 		
->>>>>>> QA2
+
 	}
 	
 
