@@ -29,9 +29,9 @@ public class DashboardpageTestcase extends Base {
 		
 		dp.verifyDashboardTitle();
 		
-	}
-	
-	
+
+	}	
+
 	
 	  @Test(priority=2) 
 	  public void verifyDashboardMusicHeader()
@@ -40,7 +40,20 @@ public class DashboardpageTestcase extends Base {
 	  dp.verifyDashboardHeader();
 	  
 	  }
+	  
+	  @Test(priority=3)
+	  public void clickMoreInfoBtn() throws InterruptedException
+	  {
+		  dp.clickMoreInformation();
+	  }
 	 
+	  @Test(priority=3)
+	  public void checkScrollDown() throws InterruptedException
+	  {
+		  Thread.sleep(3000);
+		  dp.scrollDownPage();
+		  Thread.sleep(1000);
+	  }
 	
 	
 	@AfterMethod
